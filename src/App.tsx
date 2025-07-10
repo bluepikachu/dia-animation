@@ -4,17 +4,21 @@ import { Search, Mic, ChevronDown, Plus } from 'lucide-react'
 function App() {
 
   return (
-    <div className="h-screen bg-neutral-50 flex items-center justify-center overflow-hidden select-none">
-      <div className="relative flex flex-col items-center">
+    <div className="h-screen bg-neutral-50 flex items-center justify-center overflow-hidden select-none relative">
+      {/* Background gradient */}
+      <img
+        src="/bg_gradient.svg"
+        alt="Background Gradient"
+        className="absolute top-0 left-0 w-full h-auto pointer-events-none opacity-5"
+      />
+
+      <div className="relative flex flex-col items-center z-10">
         {/* Logo */}
         <div className="mb-8">
           <img
             src="/logo_dia.svg"
             alt="Dia Logo"
             className="w-10 h-10 logo-transition"
-            style={{
-              filter: 'brightness(0) saturate(100%) invert(88%) sepia(1%) saturate(1%) hue-rotate(314deg) brightness(95%) contrast(96%)'
-            }}
             onMouseEnter={(e) => {
               e.currentTarget.style.filter = 'brightness(0) saturate(100%) invert(52%) sepia(15%) saturate(1234%) hue-rotate(225deg) brightness(91%) contrast(89%)'
             }}
