@@ -9,7 +9,7 @@ function App() {
       <img
         src="/bg_gradient.svg"
         alt="Background Gradient"
-        className="absolute top-0 left-0 w-full h-auto pointer-events-none opacity-5"
+        className="absolute top-64 w-full h-auto pointer-events-none opacity-5"
       />
 
       <div className="relative flex flex-col items-center z-10">
