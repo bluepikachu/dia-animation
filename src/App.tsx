@@ -22,7 +22,7 @@ function App() {
       />
 
       {/* Blend Shadow */}
-      <div className="absolute translate-y-9 w-164 h-32 bg-black blur-sm mix-blend-overlay rounded-4xl" ></div>
+      <div className="absolute translate-y-9 w-164 h-32 bg-black blur-md mix-blend-overlay rounded-4xl" ></div>
 
       <div className="z-10 relative flex flex-col items-center">
         {/* Logo */}
@@ -45,7 +45,7 @@ function App() {
 
         {/* Search Box */}
         <div
-          className="search-box flex flex-col bg-white custom-shadow border border-neutral-100 rounded-3xl"
+          className="search-box flex flex-col bg-white custom-shadow border border-neutral-200/70 rounded-3xl"
           style={{
             width: "640px",
             height: "112px",
