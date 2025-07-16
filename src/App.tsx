@@ -16,7 +16,7 @@ function App() {
         id="bg-gradient"
         src={bgGradientSrc}
         alt="Background Gradient"
-        className="top-64 absolute opacity-5 w-full h-auto pointer-events-none"
+        className="top-24 absolute opacity-5 w-full max-w-[1600px] h-auto pointer-events-none"
       />
 
       <div className="z-10 relative flex flex-col items-center">
