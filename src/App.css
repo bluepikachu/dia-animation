@@ -5,8 +5,8 @@
   padding: 0;
 }
 
-/* Custom shadow for search box */
-.custom-shadow {
+/* Search box */
+.search-box {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 

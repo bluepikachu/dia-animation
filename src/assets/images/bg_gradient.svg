@@ -157,21 +157,25 @@
 </defs>
 <style>
 .scale-animation {
-  animation: scaleDown 10s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: scaleDown 1.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform-origin: center top;
   opacity: 0;
 }
 
   @keyframes scaleDown {
-    0% {
-    transform: translateY(480px) scaleY(var(--scaleY, 2));
-    opacity: 0;
+    0% { 
+      transform: translateY(800px) scaleY(var(--scaleY, 2)); 
+      opacity: 0;
     }
-    25% { opacity: 1; }
-    50% { opacity: 0; }
+    25% { 
+      opacity: 1; 
+    }
+    50% { 
+      opacity: 0; 
+    }
     100% {
-    transform: translateY(120px) scaleY(0);
-    opacity: 0;
+      transform: translateY(120px) scaleY(0);
+      opacity: 0;
     }
   }
 </style>

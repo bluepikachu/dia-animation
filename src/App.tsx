@@ -18,8 +18,11 @@ function App() {
         id="bg-gradient"
         src={bgGradientSrc}
         alt="Background Gradient"
-        className="top-24 absolute opacity-25 w-full max-w-[1600px] h-auto pointer-events-none z-0"
+        className="top-24 absolute opacity-5 w-full max-w-[1600px] h-auto pointer-events-none z-0"
       />
+
+      {/* Blend Shadow */}
+      <div className="absolute translate-y-9 w-164 h-32 bg-black blur-sm mix-blend-overlay rounded-4xl" ></div>
 
       <div className="z-10 relative flex flex-col items-center">
         {/* Logo */}
@@ -42,7 +45,7 @@ function App() {
 
         {/* Search Box */}
         <div
-          className="flex flex-col bg-white custom-shadow border border-neutral-100 rounded-3xl transition-shadow"
+          className="search-box flex flex-col bg-white custom-shadow border border-neutral-100 rounded-3xl"
           style={{
             width: "640px",
             height: "112px",
