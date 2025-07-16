@@ -1,12 +1,14 @@
-import './App.css'
-import { Search, Mic, ChevronDown, Plus } from 'lucide-react'
-import { useState } from 'react';
+import "./App.css";
+import { Search, Mic, ChevronDown, Plus } from "lucide-react";
+import { useState } from "react";
+import bgGradientSvg from "./assets/images/bg_gradient.svg?url";
+import logoDiaSvg from "./assets/images/logo_dia.svg?url";
 
 function App() {
-  const [bgGradientSrc, setBgGradientSrc] = useState('/bg_gradient.svg');
+  const [bgGradientSrc, setBgGradientSrc] = useState(bgGradientSvg);
 
   const handleLogoClick = () => {
-    setBgGradientSrc('/bg_gradient.svg?v=' + new Date().getTime()); 
+    setBgGradientSrc(bgGradientSvg + "?v=" + new Date().getTime());
   };
 
   return (
@@ -16,22 +18,24 @@ function App() {
         id="bg-gradient"
         src={bgGradientSrc}
         alt="Background Gradient"
-        className="top-24 absolute opacity-5 w-full max-w-[1600px] h-auto pointer-events-none"
+        className="top-24 absolute opacity-25 w-full max-w-[1600px] h-auto pointer-events-none z-0"
       />
 
       <div className="z-10 relative flex flex-col items-center">
         {/* Logo */}
         <div className="mb-8">
           <img
-            src="/logo_dia.svg"
+            src={logoDiaSvg}
             alt="Dia Logo"
             className="w-10 h-10 logo-transition"
             onClick={handleLogoClick}
             onMouseEnter={(e) => {
-              e.currentTarget.style.filter = 'brightness(0) saturate(100%) invert(52%) sepia(15%) saturate(1234%) hue-rotate(225deg) brightness(91%) contrast(89%)'
+              e.currentTarget.style.filter =
+                "brightness(0) saturate(100%) invert(52%) sepia(15%) saturate(1234%) hue-rotate(225deg) brightness(91%) contrast(89%)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.filter = 'brightness(0) saturate(100%) invert(88%) sepia(1%) saturate(1%) hue-rotate(314deg) brightness(95%) contrast(96%)'
+              e.currentTarget.style.filter =
+                "brightness(0) saturate(100%) invert(88%) sepia(1%) saturate(1%) hue-rotate(314deg) brightness(95%) contrast(96%)";
             }}
           />
         </div>
@@ -40,8 +44,8 @@ function App() {
         <div
           className="flex flex-col bg-white custom-shadow border border-neutral-100 rounded-3xl transition-shadow"
           style={{
-            width: '640px',
-            height: '112px'
+            width: "640px",
+            height: "112px",
           }}
         >
           {/* Input */}
@@ -60,7 +64,9 @@ function App() {
               <div className="transition-colors duration-200">
                 <Plus className="w-4 h-4 text-neutral-300 group-hover:text-neutral-400 transition-colors duration-200" />
               </div>
-              <span className="text-neutral-300 group-hover:text-neutral-400 text-base transition-colors duration-200 select-none">Add tabs or files</span>
+              <span className="text-neutral-300 group-hover:text-neutral-400 text-base transition-colors duration-200 select-none">
+                Add tabs or files
+              </span>
             </div>
             <div className="flex items-center gap-3">
               <div className="group p-2 transition-colors duration-200">
@@ -74,7 +80,7 @@ function App() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
