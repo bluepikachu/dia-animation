@@ -157,7 +157,7 @@
 </defs>
 <style>
 .scale-animation {
-	animation: scaleDown 1.3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+	animation: scaleDown 1.3s cubic-bezier(0.16, 1, 0.3, 1);
 	transform-origin: center top;
     transform: scaleY(3);
     opacity: 0;
